@@ -1,0 +1,16 @@
+body{
+
+    background-color: red;
+}
+
+
+img{
+    height: 500px;
+    width: 500px;
+    border-color: blue;
+    
+}
+h1{
+
+    text-align: center;
+}
