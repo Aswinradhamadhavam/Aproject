@@ -9,8 +9,171 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="{% static 'css.css' %}">
+
+    <script   src="../static/jquery.min.js"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    
+    
+    <style>
+      
+        /* div p{
+            color: beige;
+        }
+        img[alt=img2]{
+            height: 50px;
+            width: 50px;
+        }
+        h1,p{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        h1+p{
+
+            font-size: 70px;
+        } */
+/* 
+        #dj{
+
+            color:azure;
+            font-size: 50px;
+            border: 7px solid orange;
+            text-align: center;
+           
+            height: 700px;
+            width: 100%;
+            
+            font-family: Bernard MT ;
+            
+            border-radius: 10px;
+            background-color:lightgrey;
+            background-image: url('static/rose-165819__340.jpg');
+            
+            
+        }
+        body{
+            background-color: red;
+        } */
+
+         li{
+            display:flex;
+          }
+
+        .card-text{
+            color: black;
+        }
+
+        .card{
+            margin-top: 50px;
+            margin-left: 60px;
+            margin-right: 60px;
+        }
+        .car{
+            display:flex ;
+            
+        }
+        .bg1{
+          background-color: burlywood;
+        
+        }
+        .bg2{
+          background-color: burlywood;
+         
+        }
+    </style>
 </head>
-<body bgcolor="">fgdrgs hello
-    <h1 >hello there how u doing</h1>
+<body >
+
+
+
+<!-- input <input type="text" id="day">
+<button onclick="mchange()">click</button>
+<p id="mul"></p> -->
+
+
+<p >this is 1st an example for jquery</p>
+
+<p id="para2">this  is 2nd an example for jquery</p>
+
+<p id="para" style="display: none;">this 3rd is an example for jquery</p>
+<button id="btn">click to expand</button>
+<button id="btn1">click to compress</button>
+<li>
+<div id="box" style="background:#98bf21;height:100px;width:100px;margin:6px;"></div>
+<div id="box1" style="background:#fff;height:100px;width:100px;margin:6px;"></div>
+<div id="box2" style="background:#fd7e14;height:100px;width:100px;margin:6px;"></div>
+</li>
+
 </body>
+
+  <script type="text/javascript">
+
+
+//  $(document).ready(function (){
+//    $("#para").css("background-color","cyan");
+//  });
+ 
+
+ $(document).ready(function (){
+   $("#btn").click(function(){
+
+    $("#para2").css("background-color","lightblue   ")
+   }
+   
+   )
+
+   
+ });
+
+
+ $(document).ready(function (){
+   $("#btn").click(function(){
+$("#box").animate({height: "300px"});
+   }
+   )
+   $("#btn").click(function(){
+$("#box1").animate({height: "300px"});
+   }
+   )
+   $("#btn").click(function(){
+$("#box2").animate({height: "300px"});
+   }
+   )
+   $("#btn1").click(function(){
+$("#box").animate({height: "100px"});
+   }
+   )
+   $("#btn1").click(function(){
+$("#box1").animate({height: "100px"});
+   }
+   )
+   $("#btn1").click(function(){
+$("#box2").animate({height: "100px"});
+   }
+   )
+
+ });
+
+//     function mchange()
+// {var sum
+// sum=document.getElementById('day').value
+// document.getElementById("mul").innerHTML=sum
+
+
+
+// }
+
+
+    
+
+  </script>
+
+
+    
+
+  
+    
+    
+
+
 </html>
