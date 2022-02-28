@@ -5,6 +5,6 @@ from . import views
 
 
 urlpatterns=[
-    path('',views.index),
+    path('',views.fb),
     path('main',views.index1)
 ]

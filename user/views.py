@@ -6,3 +6,6 @@ def index(request):
 
 def index1(request):
     return render(request,'index1.html')
+
+def fb(request):
+    return render(request,'facebook.html')
