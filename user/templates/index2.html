@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form method="post" action="">
+        {% csrf_token %}
+      
+      <h1>Sign Up</h1>
+      <table >
+      <tr> <th> Name:</th> <th><input type="text" name="nme" value="{{user.name}}"> </th> </tr>
+      <tr> <th> Address:</th> <th><textarea name="adr" >{{user.address}}</textarea> </th></tr>
+      <tr> <th> Phone no:</th> <th><input type="text" name="phn" value="{{user.phno}}"> </th> </tr>
+      <tr> <th>Email:</th> <th><input type="email" name="eml" value="{{user.email}}"> </th> </tr>
+      <tr> <th> Username:</th> <th><input type="text" name="usrn" value="{{user.uname}}"> </th> </tr>
+      <tr> <th>Password</th> <th><input type="password" name="pwd" value="{{user.pwd}}"> </th> </tr>
+      <tr> <th colspan="2" ><button >submit</button></th> </tr>
+      
+      </table>
+      
+      </form>
+      
+</body>
+</html>

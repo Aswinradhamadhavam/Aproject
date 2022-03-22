@@ -9,8 +9,37 @@
     <link rel="stylesheet" href="{% static 'css.css' %}">
 </head>
 <body>
-    <h1>hhh aswin project</h1>
+    {% comment %} <h1>hhh aswin project</h1>
     
-    <img src="{% static 'rose-165819__340.jpg' %}">
+    <img src="{% static 'rose-165819__340.jpg' %}"> {% endcomment %}
+
+<table border="2">
+<tr><th>name:</th> 
+<th>address</th> 
+<th>phone no:</th> 
+<th>email:</th> 
+<th>username:</th> </tr>
+{% for i in user %}
+<tr>
+    <form action="" method="POST">
+        {% csrf_token %}
+<td>{{i.name}}</td>
+<td>{{i.address}}</td>
+<td>{{i.phno}}</td>
+<td>{{i.email}}</td>
+<td>{{i.uname}}</td>
+<td> <a href="main1/{{i.sid}}">update</a>  </td>
+<td><button>delete</button></td>
+<td><input type="hidden" name="id" value="{{i.sid}}" id=""></td>
+</form>
+</tr>
+
+{% endfor %}
+
+
+
+</table>
+
+
 </body>
 </html>

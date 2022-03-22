@@ -16,9 +16,9 @@
     
     
     
-    <style>
+    <!-- <style> -->
       
-        /* div p{
+        <!-- /* div p{
             color: beige;
         }
         img[alt=img2]{
@@ -55,7 +55,7 @@
             background-color: red;
         } */
 
-         li{
+         /* li{
             display:flex;
           }
 
@@ -79,8 +79,8 @@
         .bg2{
           background-color: burlywood;
          
-        }
-    </style>
+        } -->
+    <!-- </style> */ -->
 </head>
 <body >
 
@@ -91,7 +91,7 @@
 <p id="mul"></p> -->
 
 
-<p >this is 1st an example for jquery</p>
+<!-- <p >this is 1st an example for jquery</p>
 
 <p id="para2">this  is 2nd an example for jquery</p>
 
@@ -102,19 +102,46 @@
 <div id="box" style="background:#98bf21;height:100px;width:100px;margin:6px;"></div>
 <div id="box1" style="background:#fff;height:100px;width:100px;margin:6px;"></div>
 <div id="box2" style="background:#fd7e14;height:100px;width:100px;margin:6px;"></div>
-</li>
+</li> -->
+
+<form method="post" action="">
+  {% csrf_token %}
+
+<h1>Sign Up</h1>
+<table >
+<tr> <th> Name:</th> <th><input type="text" name="nme"> </th> </tr>
+<tr> <th> Address:</th> <th><textarea name="adr"></textarea> </th></tr>
+<tr> <th> Phone no:</th> <th><input type="text" name="phn"> </th> </tr>
+<tr> <th>Email:</th> <th><input type="email" name="eml"> </th> </tr>
+<tr> <th> Username:</th> <th><input type="text" name="usrn"> </th> </tr>
+<tr> <th>Password</th> <th><input type="password" name="pwd"> </th> </tr>
+<tr> <th colspan="2" ><button >submit</button></th> </tr>
+
+</table>
+
+</form>
+
+
+
+
+
+
+
+
+
+
 
 </body>
 
-  <script type="text/javascript">
+  <!-- <script type="text/javascript"> -->
 
 
-//  $(document).ready(function (){
+<!-- //  $(document).ready(function (){
 //    $("#para").css("background-color","cyan");
-//  });
+//  }); -->
  
 
- $(document).ready(function (){
+ <!-- $(document).ready(function (){
    $("#btn").click(function(){
 
     $("#para2").css("background-color","lightblue   ")
@@ -152,16 +179,16 @@ $("#box2").animate({height: "100px"});
    }
    )
 
- });
+ }); -->
 
-//     function mchange()
+<!-- //     function mchange()
 // {var sum
 // sum=document.getElementById('day').value
-// document.getElementById("mul").innerHTML=sum
+// document.getElementById("mul").innerHTML=sum -->
 
 
 
-// }
+<!-- // } -->
 
 
     
