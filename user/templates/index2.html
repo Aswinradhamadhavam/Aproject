@@ -11,7 +11,7 @@
     <form method="post" action="">
         {% csrf_token %}
       
-      <h1>Sign Up</h1>
+      <h1>update</h1>
       <table >
       <tr> <th> Name:</th> <th><input type="text" name="nme" value="{{user.name}}"> </th> </tr>
       <tr> <th> Address:</th> <th><textarea name="adr" >{{user.address}}</textarea> </th></tr>
@@ -20,6 +20,7 @@
       <tr> <th> Username:</th> <th><input type="text" name="usrn" value="{{user.uname}}"> </th> </tr>
       <tr> <th>Password</th> <th><input type="password" name="pwd" value="{{user.pwd}}"> </th> </tr>
       <tr> <th colspan="2" ><button >submit</button></th> </tr>
+      <tr><td><input type="hidden" name="id" value={{user.sid}} id=""></td></tr>
       
       </table>
       
